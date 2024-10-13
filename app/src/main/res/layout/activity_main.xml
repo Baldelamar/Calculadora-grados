@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <!-- INGRESA EL VALOR  -->
+    <EditText
+        android:id="@+id/Valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa el valor"
+        android:inputType="numberDecimal" />
+
+    <!-- MENSAJE DE ELECCION DEL TIPO QUE SE INGRESO-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige de que tipo es "
+        android:layout_marginTop="14dp">
+    </TextView>
+
+    <!-- GRUPO DE OPCIONES DEL VALOR QUE SE INGRESO-->
+    <RadioGroup
+        android:id="@+id/Radio1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="14dp">
+
+        <!-- OPCION KELVIN -->
+        <RadioButton
+            android:id="@+id/Kelvin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelvin" />
+
+        <!-- OPCION FAHRENHEIT -->
+        <RadioButton
+            android:id="@+id/Fahrenheit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fahrenheit" />
+
+        <!-- OPCION CELCIUS -->
+        <RadioButton
+            android:id="@+id/Celsius1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celsius" />
+    </RadioGroup>
+
+    <!-- MENSAJE DE ELECCION DEL TIPO A CONVERTIR-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige a que tipo lo quieres convertir"
+        android:layout_marginTop="14dp">
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/Radio2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="14dp">
+
+        <!-- OPCION KELVIN -->
+        <RadioButton
+            android:id="@+id/Kelvin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelvin" />
+
+        <!-- OPCION FAHRENHEIT -->
+        <RadioButton
+            android:id="@+id/Fahrenheit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fahrenheit" />
+
+        <!-- OPCION CELCIUS -->
+        <RadioButton
+            android:id="@+id/Celsius2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celsius" />
+    </RadioGroup>
+
+
+    <!-- BOTON DE CONVERTIR -->
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <!-- IMPRESION DEL RESULTADO -->
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
