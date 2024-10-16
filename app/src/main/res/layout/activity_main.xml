@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:padding="48dp"
     android:id="@+id/main"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
@@ -112,3 +117,4 @@
         android:layout_marginTop="16dp" />
 
 </LinearLayout>
+</ScrollView>
